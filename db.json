@@ -923,6 +923,13 @@
       "year": "1994",
       "artist": "Nirvana",
       "id": 136
+    },
+    {
+      "albumTitle": "Bad",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-194-Michael-Jackson-Bad.jpg?w=1000",
+      "year": "1987",
+      "artist": "Michael Jackson",
+      "id": 137
     }
   ]
 }
