@@ -1,0 +1,928 @@
+{
+  "albums": [
+    {
+      "id": 1,
+      "artist": "Fleetwood Mac",
+      "albumImage": "https://upload.wikimedia.org/wikipedia/en/f/fb/FMacRumours.PNG",
+      "albumTitle": "Rumours",
+      "year": 1977
+    },
+    {
+      "id": 2,
+      "artist": "Fleetwood Mac",
+      "albumTitle": "Tango in the Night",
+      "albumImage": "https://upload.wikimedia.org/wikipedia/en/9/97/Fleetwood_Mac_-_Tango_in_the_Night.png",
+      "year": 1987
+    },
+    {
+      "id": 6,
+      "artist": "The Rolling Stones",
+      "albumTitle": "Exile on Main St.",
+      "albumImage": "https://upload.wikimedia.org/wikipedia/en/c/ca/ExileMainSt.jpg",
+      "year": 1972
+    },
+    {
+      "id": 7,
+      "artist": "The Beatles",
+      "albumTitle": "Rubber Soul",
+      "albumImage": "https://upload.wikimedia.org/wikipedia/en/7/74/Rubber_Soul.jpg",
+      "year": 1965
+    },
+    {
+      "id": 8,
+      "artist": "The Rolling Stones",
+      "albumTitle": "Let It Bleed",
+      "albumImage": "https://upload.wikimedia.org/wikipedia/en/c/c0/LetitbleedRS.jpg",
+      "year": 1969
+    },
+    {
+      "albumTitle": "Funeral",
+      "albumImage": "https://upload.wikimedia.org/wikipedia/en/2/25/ArcadeFireFuneralCover.jpg",
+      "year": "1994",
+      "artist": "Arcade Fire",
+      "id": 9
+    },
+    {
+      "albumTitle": "Dónde Están los Ladrones",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-496-Shakira-Donde-Estan-los-Ladrones.jpg?w=1000",
+      "year": "1998",
+      "artist": "Shakira",
+      "id": 10
+    },
+    {
+      "albumTitle": "Here, My Dear",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-493-Marvin-Gaye-Here-My-Dear.jpg?w=1000",
+      "year": "1978",
+      "artist": "Marvin Gaye",
+      "id": 11
+    },
+    {
+      "albumTitle": "Nick of Time",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-492-Bonnie-Raitt-Nick-of-Time.jpg?w=1000",
+      "year": "1989",
+      "artist": "Bonnie Raitt",
+      "id": 12
+    },
+    {
+      "albumTitle": "Heart Like a Wheel",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-490-Linda-Ronstadt-Heart-Like-a-Wheel.jpg?w=1000",
+      "year": "1975",
+      "artist": "Heart Like a Wheel",
+      "id": 13
+    },
+    {
+      "albumTitle": "Back to Mono (1958-1969)",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-489-Phil-Spector-Various-Artists-Back-to-Mono.jpg?w=1000",
+      "year": "1991",
+      "artist": "Phil Spector and Various Artists",
+      "id": 14
+    },
+    {
+      "albumTitle": "The Stooges",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-488-The-Stooges-The-Stooges.jpg?w=1000",
+      "year": "1969",
+      "artist": "The Stooges",
+      "id": 15
+    },
+    {
+      "albumTitle": "Damaged",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-487-Black-Flag-Damaged.jpg?w=1000",
+      "year": "1981",
+      "artist": "Black Flag",
+      "id": 16
+    },
+    {
+      "albumTitle": "Continuum",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-486-john-mayer-continuum-x.jpg?w=1000",
+      "year": "2006",
+      "artist": "John Mayer",
+      "id": 17
+    },
+    {
+      "albumTitle": "I Want to See the Bright Lights Tonight",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-485-Richard-and-Linda-Thompson-I-Want-to-See-the-bright-lights-tonight.jpg?w=1000",
+      "year": "1974",
+      "artist": "Richard and Linda Thompson",
+      "id": 18
+    },
+    {
+      "albumTitle": "Born This Way",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-484-Lady-Gaga-Born-This-Way.jpg?w=1000",
+      "year": "2011",
+      "artist": "Lady Gaga",
+      "id": 19
+    },
+    {
+      "albumTitle": "The Anthology",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-483-muddy-waters-the-anthology.jpg?w=1000",
+      "year": "2001",
+      "artist": "Muddy Waters",
+      "id": 20
+    },
+    {
+      "albumTitle": "Bizarre Ride II the Pharcyde",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-482-Tha-Pharcyde-Bizarre-Ride-II-Tha-Pharcyde.jpg?w=1000",
+      "year": "1992",
+      "artist": "The Pharcyde",
+      "id": 21
+    },
+    {
+      "albumTitle": "If You’re Feeling Sinister",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-481-Belle-and-Sebastian-If-Youre-Feeling-Sinister.jpg?w=1000",
+      "year": "1996",
+      "artist": "Belle and Sebastian",
+      "id": 22
+    },
+    {
+      "albumTitle": "The Weight of These Wings",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-480-Miranda-Lambert-Weight-of-These-Wings.jpg?w=1000",
+      "year": "2016",
+      "artist": "Miranda Lambert",
+      "id": 23
+    },
+    {
+      "albumTitle": "Amor Prohibido",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-479-Selena-Amor-Prohibido.jpg?w=1000",
+      "year": "1994",
+      "artist": "Selena",
+      "id": 24
+    },
+    {
+      "albumTitle": "Something Else by the Kinks",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-478-Kinks-Something-else-by-the-kinks.jpg?w=1000",
+      "year": "1968",
+      "artist": "The Kinks",
+      "id": 25
+    },
+    {
+      "albumTitle": "Moanin’ in the Moonlight",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-477-Howlin-Wolf-Moanin-in-the-Moonlight.jpg?w=1000",
+      "year": "1959",
+      "artist": "Howlin’ Wolf",
+      "id": 26
+    },
+    {
+      "albumTitle": "Kimono My House",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-476-Kimono-My-House.jpg?w=1000",
+      "year": "1974",
+      "artist": "Sparks",
+      "id": 27
+    },
+    {
+      "albumTitle": "Sheryl Crow",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-475-sheryl-crow-sheryl-crow.jpg?w=1000",
+      "year": "1996",
+      "artist": "Sheryl Crow",
+      "id": 28
+    },
+    {
+      "albumTitle": "#1 Record",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-474-Big-Star-1-Record.jpg?w=1000",
+      "year": "1972",
+      "artist": "Big Star",
+      "id": 29
+    },
+    {
+      "albumTitle": "Barrio Fino",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-473-Daddy-Yankee-Barrio-Fino.jpg?w=1000",
+      "year": "2004",
+      "artist": "Daddy Yankee",
+      "id": 30
+    },
+    {
+      "albumTitle": "Ctrl",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-472-SZA-Ctrl.jpg?w=1000",
+      "year": "2017",
+      "artist": "SZA",
+      "id": 31
+    },
+    {
+      "albumTitle": "Surrealistic Pillow",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-471-Jefferson-Airplane-Surrealistic-Pillow.jpg?w=1000",
+      "year": "1967",
+      "artist": "Jefferson Airplane",
+      "id": 32
+    },
+    {
+      "albumTitle": "400 Degreez",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-470-Juvenile-400-Degreez.jpg?w=1000",
+      "year": "1998",
+      "artist": "Juvenile",
+      "id": 33
+    },
+    {
+      "albumTitle": "Clandestino",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-469-Manu-Chao-Clandestino.jpg?w=1000",
+      "year": "1998",
+      "artist": "Manu Chao",
+      "id": 34
+    },
+    {
+      "albumTitle": "Some Girls",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-468-The-Rolling-Stones-Some-Girls.jpg?w=1000",
+      "year": "1978",
+      "artist": "The Rolling Stones",
+      "id": 35
+    },
+    {
+      "albumTitle": "BLACKsummers’night",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-467-Maxwell-Black-Summers-Night.jpg?w=1000",
+      "year": "2009",
+      "artist": "Maxwell",
+      "id": 36
+    },
+    {
+      "albumTitle": "The Beach Boys Today!",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-466-Beach-Boys-Today.jpg?w=1000",
+      "year": "1965",
+      "artist": "The Beach Boys",
+      "id": 37
+    },
+    {
+      "albumTitle": "The Best of the Classic Years",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-465-King-Sunny-Ade-Best-of-the-Classic-Years.jpg?w=1000",
+      "year": "2003",
+      "artist": "King Sunny Adé",
+      "id": 38
+    },
+    {
+      "albumTitle": "3 + 3",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-464-Isley-Brothers-3x3-1.jpg?w=1000",
+      "year": "1973",
+      "artist": "The Isley Brothers",
+      "id": 39
+    },
+    {
+      "albumTitle": "Eli & the 13th Confession",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-463-Laura-Nyro-Eli-The-13th-Confession.jpg?w=1000",
+      "year": "1968",
+      "artist": "Laura Nyro",
+      "id": 40
+    },
+    {
+      "albumTitle": "The Gilded Palace of Sin",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-462-Flying-Burrito-Brothers-The-Gilded-Palace-of-Sin.jpg?w=1000",
+      "year": "1969",
+      "artist": "The Flying Burrito Brothers",
+      "id": 41
+    },
+    {
+      "albumTitle": "For Emma",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-461-Bon-Iver-For-Emma.jpg?w=1000",
+      "year": "2008",
+      "artist": "Bon Iver",
+      "id": 42
+    },
+    {
+      "albumTitle": "Melodrama",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-460-Lorde-Melodrama.jpg?w=1000",
+      "year": "2017",
+      "artist": "Lorde",
+      "id": 43
+    },
+    {
+      "albumTitle": "Man on the Moon: The End of the Day",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-459-Kid-Cudi-Man-of-the-Moon.jpg?w=1000",
+      "year": "2009",
+      "artist": "Kid Cudi",
+      "id": 44
+    },
+    {
+      "albumTitle": "Southeastern",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-458-Jason-Isbell-Southeastern.jpg?w=1000",
+      "year": "2013",
+      "artist": "Jason Isbell",
+      "id": 45
+    },
+    {
+      "albumTitle": "I Do Not Want What I Haven’t Got",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-457-Sinead-OConnor-I-Do-Now-Want-What-I-Havent-Got.jpg?w=1000",
+      "year": "1990",
+      "artist": "Sinéad O’Connor",
+      "id": 46
+    },
+    {
+      "albumTitle": "Greatest Hits",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-456-Al-Green-Greatest-Hits.jpg?w=1000",
+      "year": "1975",
+      "artist": "Al Green",
+      "id": 47
+    },
+    {
+      "albumTitle": "Bo Diddley/Go Bo Diddley’",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-455-Bo-diddley-Bo-Diddley-AND-Go-Bo-Diddley.jpg?w=1000",
+      "year": "1958",
+      "artist": "Bo Diddley",
+      "id": 48
+    },
+    {
+      "albumTitle": "Ege Bamyasi",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-454-Can-Ege-Bamyasi.jpg?w=1000",
+      "year": "1972",
+      "artist": "Can",
+      "id": 49
+    },
+    {
+      "albumTitle": "Pretty Hate Machine",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-453-Nine-Inch-Nails-Pretty-Hate-Machine.jpg?w=1000",
+      "year": "1989",
+      "artist": "Nine Inch Nails",
+      "id": 50
+    },
+    {
+      "albumTitle": "Anthology",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-452-Diana-Ross-and-the-Supremes-Anthology.jpg?w=1000",
+      "year": "1974",
+      "artist": "Diana Ross and the Supremes",
+      "id": 51
+    },
+    {
+      "albumTitle": "First Take",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-451-Roberta-Flack-First-Take.jpg?w=1000",
+      "year": "1969",
+      "artist": "Roberta Flack",
+      "id": 52
+    },
+    {
+      "albumTitle": "Ram",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-450-Paul-mcCartney-RAM.jpg?w=1000",
+      "year": "1971",
+      "artist": "Paul and Linda McCartney",
+      "id": 53
+    },
+    {
+      "albumTitle": "Elephant",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-449-WhiteStripesELEPHANT.jpg?w=1000",
+      "year": "2003",
+      "artist": "The White Stripes",
+      "id": 54
+    },
+    {
+      "albumTitle": "Dictionary of Soul",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-448-Otis-Redding-Dictionary-of-Soul.jpg?w=1000",
+      "year": "1966",
+      "artist": "Otis Redding",
+      "id": 55
+    },
+    {
+      "albumTitle": "X 100pre",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-447-bad-bunny-X100pre.jpg?w=1000",
+      "year": "2018",
+      "artist": "Bad Bunny",
+      "id": 56
+    },
+    {
+      "albumTitle": "Journey in Satchidanada",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-446-Alice-Coltrane-Journey-in-Satchidanada.jpg?w=1000",
+      "year": "1971",
+      "artist": "Alice Coltrane",
+      "id": 57
+    },
+    {
+      "albumTitle": "Close to the Edge’",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-445-yes-Close-to-the-Edge.jpg?w=1000",
+      "year": "1972",
+      "artist": "Yes",
+      "id": 58
+    },
+    {
+      "albumTitle": "Extraordinary Machine",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-444-Fiona-Apple-Extraordinary-Machine.jpg?w=1000",
+      "year": "2005",
+      "artist": "Fiona Apple",
+      "id": 59
+    },
+    {
+      "albumTitle": "Scary Monsters",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-443-David-Bowie-Scary-Monsters.jpg?w=1000",
+      "year": "1980",
+      "artist": "David Bowie",
+      "id": 60
+    },
+    {
+      "albumTitle": "Beauty Behind the Madness",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-442-Weeknd-beauty-behind-the-madness.jpg?w=1000",
+      "year": "2015",
+      "artist": "The Weeknd",
+      "id": 61
+    },
+    {
+      "albumTitle": "Blackout",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-441-Britney-Spears-Blackout.jpg?w=1000",
+      "year": "2007",
+      "artist": "Britney Spears",
+      "id": 62
+    },
+    {
+      "albumTitle": "Coal Miner’s Daughter",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-440-Loretta-Lynn-Coal-Miner_s-Daughter.jpg?w=1000",
+      "year": "1971",
+      "artist": "Loretta Lynn",
+      "id": 63
+    },
+    {
+      "albumTitle": "Sex Machine",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-439-James-Brown-Sex-Machine.jpg?w=1000",
+      "year": "1970",
+      "artist": "James Brown",
+      "id": 64
+    },
+    {
+      "albumTitle": "Parklife",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-438-Blur-Parklife.jpg?w=1000",
+      "year": "1994",
+      "artist": "Blur",
+      "id": 65
+    },
+    {
+      "albumTitle": "Screamadelica",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-437-Primal-Scream-Screamadelica.jpg?w=1000",
+      "year": "1991",
+      "artist": "Primal Scream",
+      "id": 66
+    },
+    {
+      "albumTitle": "All Eyez on Me",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-436-Tupac-all-Eyez-on-Me.jpg?w=1000",
+      "year": "1996",
+      "artist": "2Pac",
+      "id": 67
+    },
+    {
+      "albumTitle": "Actually",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-435-Pet-Shop-Boys-Actually.jpg?w=1000",
+      "year": "1987",
+      "artist": "Pet Shop Boys",
+      "id": 68
+    },
+    {
+      "albumTitle": "Crooked Rain, Crooked Rain",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-434-Pavement-CROOKED-RAIN.jpg?w=1000",
+      "year": "1994",
+      "artist": "Pavement",
+      "id": 69
+    },
+    {
+      "albumTitle": "Sound of Silver",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-433-LCD-Soundsystem-Sound-of-Silver.jpg?w=1000",
+      "year": "2007",
+      "artist": "LCD Soundsystem",
+      "id": 70
+    },
+    {
+      "albumTitle": "Confessions",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-432-Usher-Confessions.jpg?w=1000",
+      "year": "2004",
+      "artist": "Usher",
+      "id": 71
+    },
+    {
+      "albumTitle": "How Will the Wolf Survive?",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-431-Los-Lobos-How-Will-the-Wolf-Survive.jpg?w=1000",
+      "year": "1984",
+      "artist": "Los Lobos",
+      "id": 72
+    },
+    {
+      "albumTitle": "My Aim Is True",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-430-elvis-costello-my-aim-is-true.jpg?w=1000",
+      "year": "1977",
+      "artist": "Elvis Costello",
+      "id": 73
+    },
+    {
+      "albumTitle": "Reach Out",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-429-Four-Tops-Reach-Out.jpg?w=1000",
+      "year": "1967",
+      "artist": "The Four Tops",
+      "id": 74
+    },
+    {
+      "albumTitle": "New Day Rising",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-428-Husker-Du-New-Day-Rising.jpg?w=1000",
+      "year": "1985",
+      "artist": "Hüsker Dü",
+      "id": 75
+    },
+    {
+      "albumTitle": "Call Me",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-427-Al-Green-Call-Me.jpg?w=1000",
+      "year": "1973",
+      "artist": "Al Green,",
+      "id": 76
+    },
+    {
+      "albumTitle": "Lucinda Williams",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-426-Lucinda-Williams-Lucinda-Williams.jpg?w=1000",
+      "year": "1988",
+      "artist": "Lucinda Williams",
+      "id": 77
+    },
+    {
+      "albumTitle": "Paul Simon",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-425-Paul-Simon-Paul-Simon.jpg?w=1000",
+      "year": "1972",
+      "artist": "Paul Simon",
+      "id": 78
+    },
+    {
+      "albumTitle": "Odelay",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-424-Beck-ODELAY-HR.jpg?w=1000",
+      "year": "1996",
+      "artist": "Beck",
+      "id": 79
+    },
+    {
+      "albumTitle": "I Can Hear the Heart Beating As One",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-423-Yo-La-Tengo-I-Can-Hear-the-Heart-Beating-As-One.jpg?w=1000",
+      "year": "1997",
+      "artist": "Yo La Tengo",
+      "id": 80
+    },
+    {
+      "albumTitle": "Let’s Get It On",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-422-Marvin-Gaye-Lets-Get-it-On.jpg?w=1000",
+      "year": "1973",
+      "artist": "Marvin Gaye",
+      "id": 81
+    },
+    {
+      "albumTitle": "Arular",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-421-MIA-Arular.jpg?w=1000",
+      "year": "2005",
+      "artist": "M.I.A.",
+      "id": 82
+    },
+    {
+      "albumTitle": "That’s the Way of the World",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-420-Earth-Wind-and-Fire-Thats-The-Way-of-The-World.jpg?w=1000",
+      "year": "1975",
+      "artist": "Earth, Wind and Fire",
+      "id": 83
+    },
+    {
+      "albumTitle": "Chief",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-419-Eric-Church-Chief.jpg?w=1000",
+      "year": "2011",
+      "artist": "Eric Church",
+      "id": 84
+    },
+    {
+      "albumTitle": "Beauty and the Beat",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-400-The-Go-Gos-Beauty-and-the-Beat.jpg?w=1000",
+      "year": "1981",
+      "artist": "The Go-Go’s",
+      "id": 86
+    },
+    {
+      "albumTitle": "Smile",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-399-brian-wilsons-smile.jpg?w=1000",
+      "year": "2004",
+      "artist": "Brian Wilson",
+      "id": 87
+    },
+    {
+      "albumTitle": "When We All Fall Asleep, Where Do We Go",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-397-billie-eilish-when-we-all-fall-asleep-where-do-we-go.jpg?w=1000",
+      "year": "2019",
+      "artist": "Billie Eilish",
+      "id": 88
+    },
+    {
+      "albumTitle": "Something/Anything",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-396-Todd-Rungren-Something_Anything_.jpg?w=1000",
+      "year": "1972",
+      "artist": "Todd Rundgren",
+      "id": 89
+    },
+    {
+      "albumTitle": "Black Messiah",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-395-D_Angelo-Black-Messiah.jpg?w=1000",
+      "year": "2014",
+      "artist": "D’Angelo and the Vanguard",
+      "id": 90
+    },
+    {
+      "albumTitle": "Diana",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-394-Diana-Ross-Diana.jpg?w=1000",
+      "year": "1980",
+      "artist": "Diana Ross",
+      "id": 91
+    },
+    {
+      "albumTitle": "Proud Mary: The Best of Ike and Tina Turner",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-392-ike-and-tina-turner-Proud-Mary-The-Best-of-Ike-and-Tina-Turner.jpg?w=1000",
+      "year": "1991",
+      "artist": "Ike and Tina Turner",
+      "id": 92
+    },
+    {
+      "albumTitle": "Kaleidoscope",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-391-Kelis-Kaleidoscope.jpg?w=1000",
+      "year": "1991",
+      "artist": "Kelis",
+      "id": 93
+    },
+    {
+      "albumTitle": "Surfer Rosa",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-390-Pixies-SURFERROSA.jpg?w=1000",
+      "year": "1988",
+      "artist": "Pixies",
+      "id": 94
+    },
+    {
+      "albumTitle": "The Emancipation of Mimi",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-389-Mariah-Carey-Emancipation-of-Mimi.jpg?w=1000",
+      "year": "2005",
+      "artist": "Mariah Carey",
+      "id": 95
+    },
+    {
+      "albumTitle": "Young, Gifted and Black",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-388-Aretha-Franklin-Young-Gifted-and-Black.jpg?w=1000",
+      "year": "1972",
+      "artist": "Aretha Franklin",
+      "id": 96
+    },
+    {
+      "albumTitle": "In Rainbows",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-387-Radiohead-In-Rainbows.jpg?w=1000",
+      "year": "2007",
+      "artist": "In Rainbows",
+      "id": 97
+    },
+    {
+      "albumTitle": "Donuts",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-386-jdilla-donuts.jpg?w=1000",
+      "year": "2006",
+      "artist": "J Dilla",
+      "id": 98
+    },
+    {
+      "albumTitle": "Rocket to Russia",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-385-ramones-rocket-to-russia.jpg?w=1000",
+      "year": "1977",
+      "artist": "Ramones",
+      "id": 99
+    },
+    {
+      "albumTitle": "Mezzanine",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-383-Massive-Attack-Mezzanine.jpg?w=1000",
+      "year": "1998",
+      "artist": "Massive Attack",
+      "id": 100
+    },
+    {
+      "albumTitle": "Currents",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-382-Tame-Impala-Currents.jpg?w=1000",
+      "year": "2015",
+      "artist": "Tame Impala",
+      "id": 101
+    },
+    {
+      "albumTitle": "(Pronounced ‘Lĕh-‘nérd ‘Skin-‘nérd)",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-381-Lynyrd-Skynyrd-pronounced-lynyrd-skynyrd.jpg?w=1000",
+      "year": "1973",
+      "artist": "Lynyrd Skynyrd",
+      "id": 102
+    },
+    {
+      "albumTitle": "Mingus Ah Um",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-380-Charles-Mingus-Mingus-Ah-Um.jpg?w=1000",
+      "year": "1959",
+      "artist": "Charles Mingus",
+      "id": 103
+    },
+    {
+      "albumTitle": "Moving Pictures",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-379-rush-moving-pictures.jpg?w=1000",
+      "year": "1981",
+      "artist": "Rush",
+      "id": 104
+    },
+    {
+      "albumTitle": "Run-DMC",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-378-Run-DMC-Run-DMC.jpg?w=1000",
+      "year": "1983",
+      "artist": "Run-DMC",
+      "id": 105
+    },
+    {
+      "albumTitle": "Fever to Tell",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-377-Yeah-Yeah-Yeahs-Fever-to-Tell.jpg?w=1000",
+      "year": "2003",
+      "artist": "Yeah Yeah Yeahs",
+      "id": 106
+    },
+    {
+      "albumTitle": "Dookie",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-375-green-day-dookie.jpg?w=1000",
+      "year": "1994",
+      "artist": "Green Day",
+      "id": 107
+    },
+    {
+      "albumTitle": "King of the Delta Blues Singers",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-374-Robert-Johnson-King-of-the-Delta-Blues.jpg?w=1000",
+      "year": "1961",
+      "artist": "Robert Johnson",
+      "id": 108
+    },
+    {
+      "albumTitle": "Hot Buttered Soul",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-373-Isaac-Hayes-Hot-Buttered-Soul.jpg?w=1000",
+      "year": "1969",
+      "artist": "Isaac Hayes",
+      "id": 109
+    },
+    {
+      "albumTitle": "Cheap Thrills",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-372-Janis-Joplin-Big-Brother-and-the-Holding-Co-Cheap-Thrills.jpg?w=1000",
+      "year": "1968",
+      "artist": "Big Brother and the Holding Company",
+      "id": 110
+    },
+    {
+      "albumTitle": "Anthology",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-371-The-Temptations-Anthology.jpg?w=1000",
+      "year": "1973",
+      "artist": "The Temptations",
+      "id": 111
+    },
+    {
+      "albumTitle": "Tha Carter II",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-370-Lil-Wayne-Tha-Carter-II.jpg?w=1000",
+      "year": "2005",
+      "artist": "Lil Wayne",
+      "id": 112
+    },
+    {
+      "albumTitle": "The Infamous",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-369-Mobb-Deep-The-Infamous.jpg?w=1000",
+      "year": "1995",
+      "artist": "Mobb Deep",
+      "id": 113
+    },
+    {
+      "albumTitle": "All Things Must Pass",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-368-George-Harrison-All-Things-Must-Pass.jpg?w=1000",
+      "year": "1970",
+      "artist": "George Harrison",
+      "id": 114
+    },
+    {
+      "albumTitle": "If You’re Reading This It’s Too Late",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-367-Drake-if-youre-reading-this-it_s-too-late.jpg?w=1000",
+      "year": "2015",
+      "artist": "Drake",
+      "id": 115
+    },
+    {
+      "albumTitle": "Aerosmith",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-366-Aerosmith-Rocks.jpg?w=1000",
+      "year": "1976",
+      "artist": "Aerosmith",
+      "id": 116
+    },
+    {
+      "albumTitle": "Madvillainy",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-365-Madvillain-Madvillainy.jpg?w=1000",
+      "year": "2004",
+      "artist": "Madvillain",
+      "id": 117
+    },
+    {
+      "albumTitle": "More Songs About Buildings and Food",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-364-Talking-Heads-More-songs-about-buildings-and-food.jpg?w=1000",
+      "year": "1978",
+      "artist": "Talking Heads",
+      "id": 118
+    },
+    {
+      "albumTitle": "Mothership Connection",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-363-Parliament-Funk-MOTHER-SHIP.jpg?w=1000",
+      "year": "1975",
+      "artist": "Parliament",
+      "id": 119
+    },
+    {
+      "albumTitle": "Never Too Much",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-362-Luther-Vandross-Never-Too-Much.jpg?w=1000",
+      "year": "1981",
+      "artist": "Luther Vandross",
+      "id": 120
+    },
+    {
+      "albumTitle": "The Black Parade",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-361-My-Chemical-Romance-The-Black-Parade.jpg?w=1000",
+      "year": "2006",
+      "artist": "My Chemical Romance",
+      "id": 121
+    },
+    {
+      "albumTitle": "One Nation Under a Groove",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-360-Funkadelic-One-Nation-Under-a-Groove.jpg?w=1000",
+      "year": "1978",
+      "artist": "Funkadelic",
+      "id": 122
+    },
+    {
+      "albumTitle": "Radio City",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-359-Big-Star-Radio-City.jpg?w=1000",
+      "year": "1974",
+      "artist": "Big Star",
+      "id": 123
+    },
+    {
+      "albumTitle": "Goo",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-358-Sonic-Youth-Goo.jpg?w=1000",
+      "year": "1990",
+      "artist": "Sonic Youth",
+      "id": 124
+    },
+    {
+      "albumTitle": "Rain Dogs",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-357-Tom-Waits-Raindogs.jpg?w=1000",
+      "year": "1985",
+      "artist": "Tom Waits",
+      "id": 125
+    },
+    {
+      "albumTitle": "Black Sabbath",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-355-Black-Sabbath-Black-Sabbath.jpg?w=1000",
+      "year": "1970",
+      "artist": "Black Sabbath",
+      "id": 126
+    },
+    {
+      "albumTitle": "Germfree Adolescents",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-354-X-Ray-Spex-Germfree-Adolescents.jpg?w=1000",
+      "year": "1978",
+      "artist": "X-Ray Spex",
+      "id": 127
+    },
+    {
+      "albumTitle": "The Cars",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-353-The-Cars-The-Cars.jpg?w=1000",
+      "year": "1978",
+      "artist": "The Cars",
+      "id": 128
+    },
+    {
+      "albumTitle": "The Slim Shady LP",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-352-Eminem-The-Slim-Shady-LP.jpg?w=1000",
+      "year": "1999",
+      "artist": "Eminem",
+      "id": 129
+    },
+    {
+      "albumTitle": "For Your Pleasure",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-351-Roxy-Music-For-Your-Pleasure.jpg?w=1000",
+      "year": "1973",
+      "artist": "Roxy Music",
+      "id": 130
+    },
+    {
+      "albumTitle": "Down Every Road 1962-1994",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-284-Merle-haggard-Down-Every-Road.jpg?w=1000",
+      "year": "1996",
+      "artist": "Merle Haggard",
+      "id": 131
+    },
+    {
+      "albumTitle": "Bad Girls’",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-283-Donna-Summer-Bad-Girls.jpg?w=1000",
+      "year": "1975",
+      "artist": "Donna Summer",
+      "id": 132
+    },
+    {
+      "albumTitle": "In the Wee Small Hours",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-282-Frank-Sinatra-In-the-Wee-Small-Hours.jpg?w=1000",
+      "year": "1955",
+      "artist": "Frank Sinatra",
+      "id": 133
+    },
+    {
+      "albumTitle": "Nilsson Schmilsson",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-281-Harry-Nilsson-Nilsson-Schmilsson.jpg?w=1000",
+      "year": "1971",
+      "artist": "Harry Nilsson",
+      "id": 134
+    },
+    {
+      "albumTitle": "Get Rich or Die Tryin",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-280-50-cent-Get-Rich-or-Die-Trying.jpg?w=1000",
+      "year": "2002",
+      "artist": "50 Cent",
+      "id": 135
+    },
+    {
+      "albumTitle": "MTV Unplugged in New York",
+      "albumImage": "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-279-Nirvana-MTV-Unplugged.jpg?w=1000",
+      "year": "1994",
+      "artist": "Nirvana",
+      "id": 136
+    }
+  ]
+}
