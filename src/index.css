@@ -54,6 +54,7 @@ header {
   align-items: center;
   color: rgb(208, 208, 208);
   margin-right: -13.5vw
+  
 }
 
 .album-cards {
@@ -66,6 +67,7 @@ header {
   margin-left: 235px;
   padding-left: 0px; 
   text-align: center;
+  
 }
 
 
@@ -73,6 +75,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-right: 1vw
+
+  
 }
 .ui.link.cards {
   display: grid;
@@ -90,12 +95,14 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .card__title {
@@ -232,6 +239,7 @@ body {
   gap: 20px;
   border-radius: 10px;
   overflow: hidden;
+ padding-right: 1vw
 }
 
 
@@ -286,7 +294,7 @@ body {
 .banner h1 {
   font-size: 14px;
   margin-top: 10px;
-  margin-right: -13.5vw
+  margin-right: -11.5vw
 }
 
 .ui.link.cards .card {
