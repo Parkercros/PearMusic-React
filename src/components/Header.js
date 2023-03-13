@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import MusicPlayer from "./MusicPlayer";
 
 function Header() {
   const location = useLocation();
@@ -13,6 +14,7 @@ function Header() {
     <header className="banner">
       <h1>Albums</h1>
       <span className="logo" role="img"></span>
+      <MusicPlayer />
     </header>
   );
 }

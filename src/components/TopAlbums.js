@@ -5,7 +5,7 @@ function TopAlbums({ limit }) {
   const [albums, setAlbums] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:4000/albums")
+    fetch("https://website-data.onrender.com/albums")
       .then((r) => r.json())
       .then((albums) => {
         albums.sort(() => Math.random() - 0.5);

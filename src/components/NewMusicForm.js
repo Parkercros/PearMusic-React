@@ -14,7 +14,7 @@ function NewMusicForm() {
       year: year,
       artist: artist
     };
-    fetch("http://localhost:4000/albums", {
+    fetch("https://website-data.onrender.com/albums", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

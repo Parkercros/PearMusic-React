@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import MyPlaylist from "./components/MyPlaylist";
 import TopAlbums from "./components/TopAlbums";
 import NewMusicForm from "./components/NewMusicForm";
+import MusicPlayer from "./components/MusicPlayer";
 
 function App() {
   const [myPlaylist, setMyPlaylist] = useState([]);
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="app-container">
       <Header />
+      <MusicPlayer />
       <div className="d-flex">
         <div className="sidebar">
           <div className="top-section">
@@ -80,11 +82,13 @@ function App() {
                 exact
                 path="/"
                 render={() => (
-                  <MusicPage
-                    newAlbums={newAlbums}
-                    setMyPlaylist={setMyPlaylist}
-                    MyPlaylist={myPlaylist}
-                  />
+                  <>
+                    <MusicPage
+                      newAlbums={newAlbums}
+                      setMyPlaylist={setMyPlaylist}
+                      MyPlaylist={myPlaylist}
+                    />
+                  </>
                 )}
               />
               <Route exact path="/topAlbums" render={() => <TopAlbums />} />
@@ -92,7 +96,10 @@ function App() {
                 exact
                 path="/MyPlaylist"
                 render={() => (
-                  <MyPlaylist MyPlaylist={myPlaylist} setMyPlaylist={setMyPlaylist} />
+                  <MyPlaylist
+                    MyPlaylist={myPlaylist}
+                    setMyPlaylist={setMyPlaylist}
+                  />
                 )}
               />
               <Route

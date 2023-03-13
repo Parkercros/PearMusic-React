@@ -10,7 +10,7 @@ function MusicPage({ MyPlaylist, setMyPlaylist }) {
   const [search, setsearch] = useState("");
 let history= useHistory ()
   useEffect(() => {
-    fetch("http://localhost:4000/albums")
+    fetch("https://website-data.onrender.com/albums")
       .then((r) => r.json())
       .then((music) => setmusic(music));
   }, []);
