@@ -12,3 +12,4 @@ In addition to the browsing and playlist features, Pear Music also has a top alb
 
 For those who want to contribute, there is also an "add new album" feature. This allows users to add new albums to the database, expanding the platform's already impressive collection of music.
 
+https://main--delicate-halva-c54521.netlify.app/
