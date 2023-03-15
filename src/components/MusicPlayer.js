@@ -11,6 +11,17 @@ const audioSources = [
   src: '/Audio/2.mp3',
   title: 'Fly Away',
   artist: 'Lenny Kravitz',
+  },
+  {
+src: '/Audio/3.mp3',
+title: 'Jeremy',
+artist: 'Pearl Jam',
+  },
+  {
+src: '/Audio/4.mp3',
+title: 'Scar Tissue',
+artist: 'Red Hot Chili Peppers',
+
   }
 ];
 
@@ -91,9 +102,13 @@ function MusicPlayer() {
   };
   
   return (
-    <div className="music-player">
-      <audio ref={audioRef} onEnded={handleEnded} />
-      <div className="track-title">{currentTrackTitle}</div>
+  <div className="music-player">
+    <audio ref={audioRef} onEnded={handleEnded} />
+    <div className="track-info">
+      <div className="track-title">{audioSources[currentTrackIndex].title}</div>
+      <div className="track-artist">{audioSources[currentTrackIndex].artist}</div>
+    </div>
+    <div className="button-container">
       <button className="previous-button" onClick={handlePreviousTrack}>
         ⏮
       </button>
@@ -104,7 +119,9 @@ function MusicPlayer() {
         ⏭
       </button>
     </div>
-  );
+  </div>
+);
+
   
 }
 
