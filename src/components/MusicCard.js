@@ -1,15 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import "./MusicCards.css"; // Import CSS file
 
 function MusicCards({ Album, MyPlaylist = [], setMyPlaylist }) {
   const { albumTitle, year, albumImage, artist, tracks } = Album;
   const [liked, setLiked] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
 
   function handleLike() {
-    console.log(handleLike)
     setLiked(true);
     setMyPlaylist([...MyPlaylist, Album]);
   }
+
+  function handleClick() {
+    setShowDropdown((prevState) => !prevState);
+  }
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (showDropdown && !event.target.closest(".dropdown")) {
+        setShowDropdown(false);
+      }
+    }
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [showDropdown]);
 
   return (
     <li style={{ listStyleType: "none" }} className="card">
@@ -24,18 +41,35 @@ function MusicCards({ Album, MyPlaylist = [], setMyPlaylist }) {
         >
           <img src={albumImage} alt={albumTitle} />
           {!liked && (
-            <button
-              className="LikedButton"
-              onClick={handleLike}
+            <div
+              className="dropdown"
               style={{
                 position: "absolute",
                 bottom: "13%",
-                right: "19%",
+                right: "13%",
                 transform: "translate(50%, 50%)",
               }}
             >
-              ...
-            </button>
+              <button
+                className="like-btn"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleClick();
+                }}
+              >
+                ...
+              </button>
+              {showDropdown && (
+                <ul className="dropdown-menu">
+                  <li>
+                    <button onClick={handleLike}>Add To Playlist</button>
+                  </li>
+                  <li>
+                  <button >Delete</button>
+                  </li>
+                </ul>
+              )}
+            </div>
           )}
         </div>
         <h4 className="card__title" style={{ textAlign: "center" }}>
@@ -48,6 +82,5 @@ function MusicCards({ Album, MyPlaylist = [], setMyPlaylist }) {
     </li>
   );
 }
-//ok
 
 export default MusicCards;

@@ -18,7 +18,6 @@ function App() {
   return (
     <div className="app-container">
       <Header />
-      <MusicPlayer />
       <div className="d-flex">
         <div className="sidebar">
           <div className="top-section">

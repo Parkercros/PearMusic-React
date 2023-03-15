@@ -2,7 +2,16 @@
 import React, { useState, useRef } from 'react';
 
 const audioSources = [  
-  '/Audio/Marvin Gaye -Sexual Healing.mp3'
+  {
+  src: '/Audio/1.mp3',
+  title: 'Sexual Healing',
+  artist: 'Marvin Gaye',
+  },
+  {
+  src: '/Audio/2.mp3',
+  title: 'Fly Away',
+  artist: 'Lenny Kravitz',
+  }
 ];
 
 function MusicPlayer() {
@@ -14,13 +23,15 @@ function MusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
-  const [currentTrackTitle, setCurrentTrackTitle] = useState(audioSources[currentTrackIndex]);
+  const [currentTrackTitle, setCurrentTrackTitle] = useState(
+    `${audioSources[currentTrackIndex].title} - ${audioSources[currentTrackIndex].artist}`
+  );
 
   const handlePlayPause = () => {
     const audio = audioRef.current;
-
+  
     if (!isPlaying) {
-      audio.src = audioSources[currentTrackIndex];
+      audio.src = audioSources[currentTrackIndex].src;
       audio.play();
       setIsPlaying(true);
     } else {
@@ -28,35 +39,73 @@ function MusicPlayer() {
       setIsPlaying(false);
     }
   };
+  
 
   const handleEnded = () => {
     const audio = audioRef.current;
   
- 
     if (currentTrackIndex < audioSources.length - 1) {
       setCurrentTrackIndex(currentTrackIndex + 1);
-      audio.src = audioSources[currentTrackIndex + 1];
-      setCurrentTrackTitle(audioSources[currentTrackIndex + 1]);
+      setCurrentTrackTitle(
+        `${audioSources[currentTrackIndex + 1].title} - ${audioSources[currentTrackIndex + 1].artist}`
+      );
+      audio.src = audioSources[currentTrackIndex + 1].src;
       audio.play();
     } else {
-   
       audio.pause();
       audio.currentTime = 0;
       setCurrentTrackIndex(0);
-      setCurrentTrackTitle(audioSources[0]);
-      audio.src = audioSources[0];
+      setCurrentTrackTitle(
+        `${audioSources[0].title} - ${audioSources[0].artist}`
+      );
+      audio.src = audioSources[0].src;
       audio.play();
     }
   };
-
+  
+  const handleNextTrack = () => {
+    const nextIndex = (currentTrackIndex + 1) % audioSources.length;
+    setCurrentTrackIndex(nextIndex);
+    setCurrentTrackTitle(
+      `${audioSources[nextIndex].title} - ${audioSources[nextIndex].artist}`
+    );
+    const audio = audioRef.current;
+    audio.src = audioSources[nextIndex].src;
+    if (isPlaying) {
+      audio.play();
+    }
+  };
+  
+  const handlePreviousTrack = () => {
+    const prevIndex =
+      (currentTrackIndex - 1 + audioSources.length) % audioSources.length;
+    setCurrentTrackIndex(prevIndex);
+    setCurrentTrackTitle(
+      `${audioSources[prevIndex].title} - ${audioSources[prevIndex].artist}`
+    );
+    const audio = audioRef.current;
+    audio.src = audioSources[prevIndex].src;
+    if (isPlaying) {
+      audio.play();
+    }
+  };
+  
   return (
-    <div style={containerStyle}>
+    <div className="music-player">
       <audio ref={audioRef} onEnded={handleEnded} />
-      <button onClick={handlePlayPause}>
+      <div className="track-title">{currentTrackTitle}</div>
+      <button className="previous-button" onClick={handlePreviousTrack}>
+        ⏮
+      </button>
+      <button className="play-pause-button" onClick={handlePlayPause}>
         {isPlaying ? '⏸️' : '▶'}
+      </button>
+      <button className="next-button" onClick={handleNextTrack}>
+        ⏭
       </button>
     </div>
   );
+  
 }
 
 export default MusicPlayer;

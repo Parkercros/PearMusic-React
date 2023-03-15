@@ -2,13 +2,15 @@ import React, { useEffect, useState } from "react";
 import MusicCards from "./MusicCard";
 import NewMusicForm from "./NewMusicForm";
 import Search from "./Search";
-import {useHistory} from 'react-router-dom';
-
+import { useHistory } from "react-router-dom";
+import MusicPlayer from "./MusicPlayer";
 
 function MusicPage({ MyPlaylist, setMyPlaylist }) {
   const [music, setmusic] = useState([]);
   const [search, setsearch] = useState("");
-let history= useHistory ()
+  const [activeButton, setActiveButton] = useState("Albums");
+  let history = useHistory();
+
   useEffect(() => {
     fetch("https://website-data.onrender.com/albums")
       .then((r) => r.json())
@@ -16,8 +18,12 @@ let history= useHistory ()
   }, []);
 
   const filteredmusic = music.filter((music) => {
-    return music.albumTitle.toLowerCase().includes(search.toLowerCase());
+    return (
+      music.albumTitle.toLowerCase().includes(search.toLowerCase()) ||
+      music.artist.toLowerCase().includes(search.toLowerCase())
+    );
   });
+  
 
   return (
     <main>
@@ -28,20 +34,21 @@ let history= useHistory ()
         <Search search={search} setsearch={setsearch} />
         <div id="navbar" className="btn-group btn-group-vertical">
           <button
-            className="btn btn-active"
-            onClick={() => (window.location.href = "/")}
+            className={`btn ${activeButton === "Albums" ? "btn-active" : ""}`}
+            onClick={() => {
+              setActiveButton("Albums");
+              window.location.href = "/";
+            }}
           >
-            <img
-              src="/musiclogo.png"
-              alt="Music Logo"
-              width="12"
-              height="12"
-            />
+            <img src="/musiclogo.png" alt="Music Logo" width="12" height="12" />
             Albums
           </button>
           <button
-            className="btn"
-            onClick={() => (window.location.href = "/topAlbums")}
+            className={`btn ${activeButton === "TopAlbums" ? "btn-active" : ""}`}
+            onClick={() => {
+              setActiveButton("TopAlbums");
+              window.location.href = "/topAlbums";
+            }}
           >
             <img
               src="./albumslogo.png"
@@ -52,8 +59,11 @@ let history= useHistory ()
             Top Albums
           </button>
           <button
-            className="btn"
-            onClick={() => (history.push("/MyPlaylist"))}
+            className={`btn ${activeButton === "MyPlaylist" ? "btn-active" : ""}`}
+            onClick={() => {
+              setActiveButton("MyPlaylist");
+              history.push("/MyPlaylist");
+            }}
           >
             <img
               src="./playlistlogo.png"
@@ -64,8 +74,13 @@ let history= useHistory ()
             My Playlist
           </button>
           <button
-            className="btn"
-            onClick={() => (window.location.href = "/newAlbums")}
+            className={`btn ${
+              activeButton === "AddNewAlbum" ? "btn-active" : ""
+            }`}
+            onClick={() => {
+              setActiveButton("AddNewAlbum");
+              window.location.href = "/newAlbums";
+            }}
           >
             <img
               src="./newalbumimage.png"
@@ -75,6 +90,8 @@ let history= useHistory ()
             />{" "}
             Add New Album
           </button>
+          <MusicPlayer /> {/* Add MusicPlayer component here */}
+          <button className="btn btn-square loading"></button>
         </div>
       </div>
       <div className="main-content">

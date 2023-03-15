@@ -1,6 +1,7 @@
 li.card img {
   width: 222px;
   height: 222px;
+  border-radius: 4px;
 }
 
 header {
@@ -80,15 +81,14 @@ header {
   
 }
 .ui.link.cards {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-top: 20px;
   padding-left: 2px;
-  margin-left: 235px;
+  margin-left: 210px; /* Adjust this value */
   padding-left: 0px; 
   text-align: center;
-  
 }
 
 .ui.link.cards {
@@ -239,14 +239,17 @@ body {
   gap: 20px;
   border-radius: 10px;
   overflow: hidden;
- padding-right: 1vw
+  padding-right: px; /* Adjust this value */
 }
+
 
 
 
 .card {
-  width: calc(16.66% - 20px);
+  width: 222px;
+  margin: 10px;
 }
+
 
 .card__title {
   max-width: 160px;
@@ -323,3 +326,59 @@ body {
 }
 
 
+.btn-active {
+  background-color: grey;
+}
+
+
+.music-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(57, 57, 57, 0.8);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.play-pause-button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.play-pause-button:hover {
+  color: #ff0000;
+}
+
+.track-title {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.music-player {
+  display: flex;
+  align-items: center;
+}
+
+.play-pause-button,
+.previous-button,
+.next-button {
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.play-pause-button:hover,
+.previous-button:hover,
+.next-button:hover {
+  color: #007bff;
+}

@@ -14,7 +14,6 @@ function Header() {
     <header className="banner">
       <h1>Albums</h1>
       <span className="logo" role="img"></span>
-      <MusicPlayer />
     </header>
   );
 }
