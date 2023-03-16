@@ -102,29 +102,32 @@ function MusicPlayer() {
               ⏮
             </button>
             <button className="play-pause-button" onClick={handlePlayPause}>
-              {isPlaying ? '⏸️' : '▶'}
+              {isPlaying ? 'II' : '▶'}
             </button>
             <button className="next-button" onClick={handleNextTrack}>
               ⏭
             </button>
           </div>
-          <div className="volume-container">
-            <input
-              type="range"
-              min="0"
-              max="1"
-              step="0.1"
-              value={volume}
-              onChange={handleVolumeChange}
-            />
-          </div>
+       
         </div>
         <div className="track-info-container">
           <div className="track-info-wrapper">
             <div className="track-info">
               <div className="track-title">{audioSources[currentTrackIndex].title}</div>
               <div className="track-artist">{audioSources[currentTrackIndex].artist}</div>
+              
             </div>
+            
+          </div>
+          <div className="volume-container">
+            <input
+              type="range"
+              min="0"
+              max="1"
+              step="0.001"
+              value={volume}
+              onChange={handleVolumeChange}
+            />
           </div>
         </div>
       </div>
