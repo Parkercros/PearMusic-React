@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 
+
 const audioSources = [
   {
     src: '/Audio/1.mp3',
@@ -25,16 +26,17 @@ const audioSources = [
 
 function MusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [volume, setVolume] = useState(0.5);
   const audioRef = useRef(null);
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
   const [showImage, setShowImage] = useState(true);
-
 
   const handlePlayPause = () => {
     const audio = audioRef.current;
 
     if (!isPlaying) {
       audio.src = audioSources[currentTrackIndex].src;
+      audio.volume = volume;
       audio.play();
       setIsPlaying(true);
     } else {
@@ -50,12 +52,14 @@ function MusicPlayer() {
     if (currentTrackIndex < audioSources.length - 1) {
       setCurrentTrackIndex(currentTrackIndex + 1);
       audio.src = audioSources[currentTrackIndex + 1].src;
+      audio.volume = volume;
       audio.play();
     } else {
       audio.pause();
       audio.currentTime = 0;
       setCurrentTrackIndex(0);
       audio.src = audioSources[0].src;
+      audio.volume = volume;
       audio.play();
     }
   };
@@ -65,6 +69,7 @@ function MusicPlayer() {
     setCurrentTrackIndex(nextIndex);
     const audio = audioRef.current;
     audio.src = audioSources[nextIndex].src;
+    audio.volume = volume;
     if (isPlaying) {
       audio.play();
     }
@@ -76,9 +81,16 @@ function MusicPlayer() {
     setCurrentTrackIndex(prevIndex);
     const audio = audioRef.current;
     audio.src = audioSources[prevIndex].src;
+    audio.volume = volume;
     if (isPlaying) {
       audio.play();
     }
+  };
+
+  const handleVolumeChange = (e) => {
+    const audio = audioRef.current;
+    setVolume(parseFloat(e.target.value));
+    audio.volume = parseFloat(e.target.value);
   };
   return (
     <div className="music-player-container">
@@ -96,6 +108,16 @@ function MusicPlayer() {
               ⏭
             </button>
           </div>
+          <div className="volume-container">
+            <input
+              type="range"
+              min="0"
+              max="1"
+              step="0.1"
+              value={volume}
+              onChange={handleVolumeChange}
+            />
+          </div>
         </div>
         <div className="track-info-container">
           <div className="track-info-wrapper">
@@ -109,6 +131,5 @@ function MusicPlayer() {
     </div>
   );
   }  
-  
 
 export default MusicPlayer;

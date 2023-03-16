@@ -399,7 +399,17 @@ body {
   color: rgb(132, 132, 132);
   font-family: 'SF Pro', sans-serif;
   position: relative;
+  transition: color 0.1s ease-in-out;
+  padding-bottom: .6vw;
+  
+  
 
+}
+
+.play-pause-button:active,
+.back-button:active,
+.next-button:active {
+  color: white;
 }
 
 .header-albums {
@@ -481,8 +491,8 @@ padding-top: 5px;
   text-align: left;
   position: relative;
   margin-left: -750px;
-  margin-top: 5px; /* Add this line to create a gap on the upper side */
-  margin-bottom: 5px; /* Add this line to create a gap on the lower side */
+  margin-top: 5px;
+  margin-bottom: 5px; 
 }
 
 
@@ -499,3 +509,4 @@ padding-top: 5px;
   display: flex;
   align-items: center;
 }
+
