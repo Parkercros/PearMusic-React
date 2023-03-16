@@ -27,9 +27,8 @@ function MusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
-  const [currentTrackTitle, setCurrentTrackTitle] = useState(
-    `${audioSources[currentTrackIndex].title} - ${audioSources[currentTrackIndex].artist}`,
-  );
+  const [showImage, setShowImage] = useState(true);
+
 
   const handlePlayPause = () => {
     const audio = audioRef.current;
@@ -42,6 +41,7 @@ function MusicPlayer() {
       audio.pause();
       setIsPlaying(false);
     }
+    setShowImage(false);
   };
 
   const handleEnded = () => {
@@ -49,18 +49,12 @@ function MusicPlayer() {
 
     if (currentTrackIndex < audioSources.length - 1) {
       setCurrentTrackIndex(currentTrackIndex + 1);
-      setCurrentTrackTitle(
-        `${audioSources[currentTrackIndex + 1].title} - ${audioSources[currentTrackIndex + 1].artist}`,
-      );
       audio.src = audioSources[currentTrackIndex + 1].src;
       audio.play();
     } else {
       audio.pause();
       audio.currentTime = 0;
       setCurrentTrackIndex(0);
-      setCurrentTrackTitle(
-        `${audioSources[0].title} - ${audioSources[0].artist}`,
-      );
       audio.src = audioSources[0].src;
       audio.play();
     }
@@ -69,9 +63,6 @@ function MusicPlayer() {
   const handleNextTrack = () => {
     const nextIndex = (currentTrackIndex + 1) % audioSources.length;
     setCurrentTrackIndex(nextIndex);
-    setCurrentTrackTitle(
-      `${audioSources[nextIndex].title} - ${audioSources[nextIndex].artist}`,
-    );
     const audio = audioRef.current;
     audio.src = audioSources[nextIndex].src;
     if (isPlaying) {
@@ -83,20 +74,11 @@ function MusicPlayer() {
     const prevIndex =
       (currentTrackIndex - 1 + audioSources.length) % audioSources.length;
     setCurrentTrackIndex(prevIndex);
-    setCurrentTrackTitle(
-      `${audioSources[prevIndex].title} - ${audioSources[prevIndex].artist}`,
-    );
     const audio = audioRef.current;
     audio.src = audioSources[prevIndex].src;
     if (isPlaying) {
       audio.play();
     }
-  };
-
-  const trackInfoWrapperStyle = {
-    backgroundColor: '#f0f0f0',
-    padding: '5px 10px',
-    borderRadius: '5px',
   };
   return (
     <div className="music-player-container">

@@ -10,6 +10,7 @@ header {
   align-items: center;
   color: rgb(208, 208, 208);
   font-family: 'SF Pro', sans-serif;
+  font-size: 10px;
 }
 
 .searchbar {
@@ -215,6 +216,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  z-index: 1000;
   
 }
 
@@ -288,7 +290,7 @@ body {
   background-position: center center;
   height: 50px;
   position: relative;
-  z-index: 100; 
+  z-index: 2; 
 }
 
 .top-section img {
@@ -347,10 +349,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-
-  background-color: #1b1b1b;
+  backdrop-filter: blur(10px); 
+  background-color: #1b1b1bc1;
   border-bottom: 1px solid #dee2e600;
-  z-index: 1;
+  z-index: 10;
   margin-left: 200px;
 
   box-sizing: border-box;
@@ -412,7 +414,7 @@ body {
 }
 .fixed-header {
   position: fixed;
-  top: 45px; 
+  top: 50px; 
   left: 0;
   right: 0;
   height: 40px; 
@@ -422,7 +424,7 @@ body {
   background-color: #2f2f2fe1;
   color: rgb(208, 208, 208);
   font-family: 'SF Pro', sans-serif;
-  z-index: 1;
+  z-index: 2;
   backdrop-filter: blur(10px); 
   font-family: 'SF Pro', sans-serif;
   padding-left: 200px;
@@ -471,15 +473,18 @@ padding-top: 5px;
 }
 
 .track-info-wrapper {
-  background-color: rgb(65, 65, 65);
+  background-color: rgba(65, 65, 65, 0.435);
   padding: 10px;
   display: inline-block;
   border-radius: 5px;
   width: 300px;
   text-align: left;
   position: relative;
-  margin-left: -750px; 
+  margin-left: -750px;
+  margin-top: 5px; /* Add this line to create a gap on the upper side */
+  margin-bottom: 5px; /* Add this line to create a gap on the lower side */
 }
+
 
 
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import MusicPage from "./components/MusicPage";
 import Header from "./components/Header";
 import MyPlaylist from "./components/MyPlaylist";
