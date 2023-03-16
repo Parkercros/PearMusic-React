@@ -23,7 +23,6 @@ function MusicPage({ MyPlaylist, setMyPlaylist }) {
       music.artist.toLowerCase().includes(search.toLowerCase())
     );
   });
-  
 
   return (
     <main>
@@ -95,6 +94,7 @@ function MusicPage({ MyPlaylist, setMyPlaylist }) {
         </div>
       </div>
       <div className="main-content">
+        <h2 className="fixed-header">Albums</h2>
         <div className="ui link cards">
           {filteredmusic.map((music) => (
             <MusicCards

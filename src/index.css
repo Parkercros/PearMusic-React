@@ -54,9 +54,11 @@ header {
   justify-content: center;
   align-items: center;
   color: rgb(208, 208, 208);
-  margin-right: -13.5vw
-  
+  margin-right: -13.5vw;
+  background-color: #2f2f2f;
+  margin-top: 30px;
 }
+
 
 .album-cards {
   justify-content: space-between;
@@ -86,7 +88,7 @@ header {
   justify-content: center;
   padding-top: 20px;
   padding-left: 2px;
-  margin-left: 210px; /* Adjust this value */
+  margin-left: 210px;
   padding-left: 0px; 
   text-align: center;
 }
@@ -183,6 +185,7 @@ body {
   background-color: rgb(37,37,38);
   overflow-x: hidden;
   padding-top: 20px;
+  z-index: 2;
 }
 
 .sidebar button.btn {
@@ -212,6 +215,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  
 }
 
 
@@ -239,7 +243,8 @@ body {
   gap: 20px;
   border-radius: 10px;
   overflow: hidden;
-  padding-right: px; /* Adjust this value */
+  padding-right: px;
+  margin-top: 38px;
 }
 
 
@@ -273,6 +278,7 @@ body {
   margin-bottom: -4px !important;
   padding-left: 10px;
   text-align: left; 
+  z-index: 20;
 }
 
 .top-section {
@@ -282,7 +288,7 @@ body {
   background-position: center center;
   height: 50px;
   position: relative;
-  z-index: 2; 
+  z-index: 100; 
 }
 
 .top-section img {
@@ -331,67 +337,160 @@ body {
 }
 
 
+
+
 .music-player {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: #1b1b1b;
+  border-bottom: 1px solid #dee2e600;
+  z-index: 1;
+  margin-left: 200px;
+
+  box-sizing: border-box;
+  width: calc(100% - 200px); 
+  
+}
+
+.track-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(57, 57, 57, 0.8);
-  color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  font-size: 16px;
+ 
 }
-
-.play-pause-button {
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
-  color: #fff;
-  font-size: 24px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.play-pause-button:hover {
-  color: #ff0000;
-}
-
 
 .track-title {
-  font-size: 14px;
-  margin-bottom: 2px;
-
-}
-.track-artist {
-  font-size: 12px;
-  color: #999;
-}
-.track-info {
+  font-size: 18px;
+  color: white;
+  font-family: 'SF Pro', sans-serif;
   text-align: center;
-}
-.music-player {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  
 }
 
-.button-container {
+.track-artist {
+  font-size: 14px;
+  color: #8b8b8b;
+  font-family: 'SF Pro', sans-serif;
+  text-align: center;
+
+}
+
+.controls {
   display: flex;
+  align-items: center;
 }
 
 .play-pause-button,
-.previous-button,
+.back-button,
 .next-button {
-  font-size: 16px;
-  background-color: transparent;
-  border: none;
+  font-size: 24px; 
   margin: 0 5px;
+  background: none;
+  border: none;
+  outline: none;
   cursor: pointer;
-  color:white
+  color: rgb(132, 132, 132);
+  font-family: 'SF Pro', sans-serif;
+  position: relative;
+
 }
 
-.play-pause-button:hover,
-.previous-button:hover,
-.next-button:hover {
-  color: #007bff;
+.header-albums {
+  margin-top: 20px; 
+  margin-left: 210px;
+  color: rgba(63, 63, 63, 0.646);
+  font-size: 1;
+  font-weight: bold;
+  font-family: 'SF Pro', sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+.fixed-header {
+  position: fixed;
+  top: 45px; 
+  left: 0;
+  right: 0;
+  height: 40px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2f2f2fe1;
+  color: rgb(208, 208, 208);
+  font-family: 'SF Pro', sans-serif;
+  z-index: 1;
+  backdrop-filter: blur(10px); 
+  font-family: 'SF Pro', sans-serif;
+  padding-left: 200px;
+  font-size: 15px;
+}
+.music-player-controls {
+  display: flex;
+  justify-content: flex-start;
+ 
+}
+.controls {
+  display: flex;
+  justify-content: flex-start;
+padding-top: 5px;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  margin-left: -200px;
+}
+.play-pause-button {
+  top: 5px; 
+}
+
+.back-button {
+  top: 5px; 
+}
+
+.next-button {
+  top: 5px; 
+}
+.track-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+}
+.controls-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px; 
+  margin-left: 1vw;
+}
+
+.track-info-wrapper {
+  background-color: rgb(65, 65, 65);
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  width: 300px;
+  text-align: left;
+  position: relative;
+  margin-left: -750px; 
+}
+
+
+
+
+.music-player-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.music-player {
+  display: flex;
+  align-items: center;
 }

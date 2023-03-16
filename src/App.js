@@ -19,6 +19,7 @@ function App() {
     <div className="app-container">
       
       <Header />
+      <MusicPlayer /> {/* Add the MusicPlayer component here */}
       <div className="d-flex">
         <div className="sidebar">
           <div className="top-section">
