@@ -17,4 +17,3 @@ For those who want to contribute, there is also an "add new album" feature. This
 
 The Top music component houses the controlls for a handfull of songs. Users can skip, pause, play, and go back to a previous song. The progress bar shows the current part of the song, and by clicking on it you are able to jump to specific parts of a song. The volume butten is also functional.
 
-https://main--delicate-halva-c54521.netlify.app/
