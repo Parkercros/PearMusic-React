@@ -2,7 +2,7 @@
 
 Pear Music is a parody of Apple Music. 
 
-To view you're going to need to run NPM Start, and NPM Run Server.
+To view you're going to need to run NPM Start.
 The database is hosted online and is decently sized, so it may take a moment to fully load.
 
 The first feature of Pear Music is its album browsing capabilities. Users can easily navigate through a variety of albums in the main file, making it easy to discover new music. The search function also allows users to find specific albums by name.
