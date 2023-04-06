@@ -9,7 +9,7 @@ function TopAlbums({ limit }) {
       .then((r) => r.json())
       .then((albums) => {
         albums.sort(() => Math.random() - 0.5);
-        const topAlbums = albums.slice(0, limit = 12);
+        const topAlbums = albums.slice(0, limit = 15);
         setAlbums(topAlbums);
       });
   }, [limit]);

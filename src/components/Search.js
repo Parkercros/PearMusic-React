@@ -1,7 +1,6 @@
 import React from "react";
 
 function Search({ search, setsearch }) {
-  
   const handleSearch = (e) => {
     setsearch(e.target.value);
   };
@@ -12,7 +11,7 @@ function Search({ search, setsearch }) {
       <input
         type="text"
         id="search"
-        placeholder="🔍Search"
+        placeholder="  Search"
         value={search}
         onChange={handleSearch}
       />

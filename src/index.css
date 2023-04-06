@@ -9,7 +9,7 @@ header {
   justify-content: center;
   align-items: center;
   color: rgb(208, 208, 208);
-  font-family: 'SF Pro', sans-serif;
+  font-family: "SF Pro", sans-serif;
   font-size: 10px;
 }
 
@@ -17,7 +17,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 1px;
   border-radius: 8px;
   margin: 10px;
 }
@@ -30,7 +30,7 @@ header {
   border-radius: 8px;
   background-color: rgb(76, 76, 76);
   color: white;
-  font-family: 'SF Pro', sans-serif;
+  font-family: "SF Pro", sans-serif;
 }
 .searchbar label {
   color: white;
@@ -38,7 +38,7 @@ header {
 .searchbar input[type="text"]::placeholder {
   color: #ccc;
   font-size: 10px;
-  font-family: 'SF Pro', sans-serif;
+  font-family: "SF Pro", sans-serif;
 }
 
 .new-music-form {
@@ -50,16 +50,16 @@ header {
 
 .top-albums-title {
   font-size: 200x;
-  font-family: 'SF Pro', sans-serif;
+  font-family: "SF Pro", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   color: rgb(208, 208, 208);
-  margin-right: -13.5vw;
+  margin-right: -11.5vw;
   background-color: #2f2f2f;
   margin-top: 30px;
+  
 }
-
 
 .album-cards {
   justify-content: space-between;
@@ -69,19 +69,15 @@ header {
   padding-top: 20px;
   padding-left: 2px;
   margin-left: 235px;
-  padding-left: 0px; 
+  padding-left: 0px;
   text-align: center;
-  
 }
-
 
 .album-cards .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-right: 1vw
-
-  
+  padding-right: 1vw;
 }
 .ui.link.cards {
   display: flex;
@@ -90,7 +86,7 @@ header {
   padding-top: 20px;
   padding-left: 2px;
   margin-left: 210px;
-  padding-left: 0px; 
+  padding-left: 0px;
   text-align: center;
 }
 
@@ -98,14 +94,12 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
 }
 
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .card__title {
@@ -118,16 +112,15 @@ header {
   display: flex;
   flex-direction: column;
   font-family: arial;
-  
 }
 
-.card__artist{
+.card__artist {
   max-width: 200px;
   word-wrap: break-word;
   overflow-wrap: break-word;
   color: rgb(144, 144, 144);
   margin-top: 5px;
- 
+
   text-align: center;
   margin: 0 auto;
   display: flex;
@@ -136,15 +129,11 @@ header {
   font-size: small;
 }
 
-
-
-
 body {
-  background-color: #2f2f2f;;
+  background-color: #2f2f2f;
 }
 
 .LikedButton {
- 
   border-radius: 50%;
   background-color: rgba(82, 82, 82, 0.852);
   color: #fff;
@@ -176,17 +165,17 @@ body {
   visibility: visible;
 }
 
-  .sidebar {
+.sidebar {
   height: 100%;
   width: 200px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(37,37,38);
+  background-color: rgb(37, 37, 38);
   overflow-x: hidden;
   padding-top: 20px;
-  z-index: 2;
+  z-index: 65;
 }
 
 .sidebar button.btn {
@@ -208,7 +197,6 @@ body {
   padding: 16px;
   padding-left: 0;
   margin-bottom: 100px;
- 
 }
 
 #navbar {
@@ -217,10 +205,7 @@ body {
   align-items: center;
   width: 100%;
   z-index: 1000;
-  
 }
-
-
 
 .sidebar #navbar button {
   display: block;
@@ -228,7 +213,7 @@ body {
   margin-bottom: 10px;
 }
 .banner {
-  background-color: #2f2f2fde;;
+  background-color: #2f2f2fde;
   height: 30px;
   display: flex;
   z-index: 1;
@@ -246,17 +231,13 @@ body {
   border-radius: 10px;
   overflow: hidden;
   padding-right: px;
-  margin-top: 38px;
+  margin-top: 44px;
 }
-
-
-
 
 .card {
   width: 222px;
   margin: 10px;
 }
-
 
 .card__title {
   max-width: 160px;
@@ -265,7 +246,6 @@ body {
 .card__artist {
   max-width: 160px;
 }
-
 
 .sidebar button.btn:active {
   background-color: grey !important;
@@ -279,8 +259,16 @@ body {
   padding: px;
   margin-bottom: -4px !important;
   padding-left: 10px;
-  text-align: left; 
+  text-align: left;
   z-index: 20;
+}
+.app-header {
+  margin-top: 20px; 
+  width: 100%;
+  text-align: center;
+  padding: 10px 0; 
+  color: rgb(228, 228, 228);
+
 }
 
 .top-section {
@@ -290,7 +278,7 @@ body {
   background-position: center center;
   height: 50px;
   position: relative;
-  z-index: 2; 
+  z-index: 2;
 }
 
 .top-section img {
@@ -305,7 +293,7 @@ body {
 .banner h1 {
   font-size: 14px;
   margin-top: 10px;
-  margin-right: -11.5vw
+  margin-right: -11.5vw;
 }
 
 .ui.link.cards .card {
@@ -325,7 +313,6 @@ body {
   padding-top: 20px;
 }
 
-
 .my-playlist-cards li:last-child {
   margin-right: 0;
 }
@@ -333,13 +320,9 @@ body {
   overflow-x: hidden;
 }
 
-
 .btn-active {
   background-color: grey;
 }
-
-
-
 
 .music-player {
   position: fixed;
@@ -349,39 +332,33 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  backdrop-filter: blur(10px); 
+  backdrop-filter: blur(10px);
   background-color: #1b1b1bc1;
   border-bottom: 1px solid #dee2e600;
   z-index: 10;
   margin-left: 200px;
- 
-  
 
   box-sizing: border-box;
-  width: calc(100% - 200px); 
-  
+  width: calc(100% - 200px);
 }
 
 .track-info {
   display: flex;
   flex-direction: column;
- 
 }
 
 .track-title {
   font-size: 18px;
   color: white;
-  font-family: 'SF Pro', sans-serif;
+  font-family: "SF Pro", sans-serif;
   text-align: center;
-  
 }
 
 .track-artist {
   font-size: 14px;
   color: #8b8b8b;
-  font-family: 'SF Pro', sans-serif;
+  font-family: "SF Pro", sans-serif;
   text-align: center;
-
 }
 
 .controls {
@@ -392,20 +369,17 @@ body {
 .play-pause-button,
 .back-button,
 .next-button {
-  font-size: 24px; 
+  font-size: 24px;
   margin: 0 5px;
   background: none;
   border: none;
   outline: none;
   cursor: pointer;
   color: rgb(132, 132, 132);
-  font-family: 'SF Pro', sans-serif;
+  font-family: "SF Pro", sans-serif;
   position: relative;
   transition: color 0.1s ease-in-out;
-  padding-bottom: .6vw;
-  
-  
-
+  padding-bottom: 0.6vw;
 }
 
 .play-pause-button:active,
@@ -415,42 +389,41 @@ body {
 }
 
 .header-albums {
-  margin-top: 0px; 
+  margin-top: 0px;
   margin-left: 210px;
   color: rgba(63, 63, 63, 0.646);
   font-size: 1;
   font-weight: bold;
-  font-family: 'SF Pro', sans-serif;
+  font-family: "SF Pro", sans-serif;
   align-items: center;
   justify-content: center;
 }
 .fixed-header {
   position: fixed;
-  top: 50px; 
+  top: 50px;
   left: 0;
   right: 0;
-  height: 30px; 
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #2f2f2fe1;
   color: rgb(208, 208, 208);
-  font-family: 'SF Pro', sans-serif;
+  font-family: "SF Pro", sans-serif;
   z-index: 2;
-  backdrop-filter: blur(10px); 
-  font-family: 'SF Pro', sans-serif;
+  backdrop-filter: blur(10px);
+  font-family: "SF Pro", sans-serif;
   padding-left: 200px;
   font-size: 15px;
 }
 .music-player-controls {
   display: flex;
   justify-content: flex-start;
- 
 }
 .controls {
   display: flex;
   justify-content: flex-start;
-padding-top: 5px;
+  padding-top: 5px;
 }
 
 .buttons-container {
@@ -459,54 +432,45 @@ padding-top: 5px;
   margin-left: -200px;
 }
 .play-pause-button {
-  top: 5px; 
+  top: 5px;
 }
 
 .back-button {
-  top: 5px; 
+  top: 5px;
 }
 
 .next-button {
-  top: 5px; 
+  top: 5px;
 }
 .track-info-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin-bottom: -20px
-
+  margin-bottom: -20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 .controls-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px; 
+  width: 200px;
   margin-left: 1vw;
 }
 
 .track-info-wrapper {
-  background-color: rgba(65, 65, 65, 0.435);
+  background-color: rgba(47, 47, 47, 0.833);
   padding: 10px;
   display: inline-block;
   border-radius: 5px;
-  width: 300px;
+  width: 400px;
+  height: 33px;
   text-align: left;
   position: relative;
-  margin-left: -750px;
-  margin-top: 5px; 
-  margin-bottom: 5px; 
-
-}
-
-
-
-
-
-.music-player-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  margin-left: -687px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .music-player {
@@ -519,12 +483,138 @@ padding-top: 5px;
   align-items: center;
   margin-left: auto;
   position: relative;
-  
+  top: -40px;
+  left: 8vw;
 }
-.volume-container {
+.sorting-container {
   display: flex;
   align-items: center;
-  margin-left: auto;
+  justify-content: center;
+  background-color: rgba(47, 47, 47, 0);
+  color: rgba(47, 47, 47, 0);
+  padding: 10px 0;
+  position: fixed;
+  top: 57px;
+  left: 90vw;
+  right: 0;
+  z-index: 67;
+  border: none;
+  outline: none;
+}
+
+.app-header {
+  position: fixed;
+  top: 55px;
+  margin-top: 0;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  background-color: rgba(47, 47, 47, 0.833);
+  z-index: 64;
+  backdrop-filter: blur(10px);
+  text-align: right;
+  padding: 5px 0 5px 110px;
+  height: 2vw;
+  font-size: 7px;
+}
+.app-header span {
+  
+  display: inline-block;
+  padding-top: 100px; 
+}
+
+.app-header h1 {
+ 
+  margin-top: 20px; 
+  padding-left: 5.5vw;
+}
+.sort {
+  background-color: rgba(47, 47, 47, 0.833);
+  border: none;
+  color: #fff;
+  font-family: "SF Pro", sans-serif;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sort-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.custom-select {
   position: relative;
-  top: -40px; /* Adjust this value to move the volume container up */
+  display: inline-block;
+  width: 55px;
+  overflow: hidden;
+  background-color: rgba(47, 47, 47, 0.833);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+}
+
+.custom-select select {
+  appearance: none;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: "SF Pro", sans-serif;
+  font-size: 14px;
+  padding: 6px 12px;
+  padding-right: 30px;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  background-color: rgba(47, 47, 47, 0.833);
+}
+
+.custom-select:after {
+  content: "⌄";
+  position: absolute;
+  top: 30%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #fff;
+  pointer-events: none;
+  background-color: rgba(47, 47, 47, 0.833);
+}
+
+.custom-select:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.track-info-wrapper {
+  position: relative;
+}
+
+.track-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  appearance: none;
+  background-color: rgba(47, 47, 47, 0.833);
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.track-progress::-webkit-progress-bar {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.track-progress::-webkit-progress-value {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.track-progress::-moz-progress-bar {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.new-music-form{
+  margin-top: 5vw;
+  margin-left: 11vw;
+}
+
+.dropdown{
+  z-index: 1;
 }

@@ -65,7 +65,7 @@ function MusicCards({ Album, MyPlaylist = [], setMyPlaylist }) {
                     <button onClick={handleLike}>Add To Playlist</button>
                   </li>
                   <li>
-                  <button >Delete</button>
+                    <button>Delete</button>
                   </li>
                 </ul>
               )}

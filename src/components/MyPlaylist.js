@@ -3,7 +3,7 @@ import MusicCards from "./MusicCard";
 import { Link } from "react-router-dom";
 
 function MyPlaylist({ MyPlaylist }) {
-  console.log(MyPlaylist)
+  console.log(MyPlaylist);
   return (
     <div>
       <h1></h1>
@@ -16,11 +16,9 @@ function MyPlaylist({ MyPlaylist }) {
       ) : (
         <p></p>
       )}
-      
     </div>
   );
 }
 //ok
-
 
 export default MyPlaylist;

@@ -12,17 +12,17 @@ function NewMusicForm() {
       albumTitle: albumName,
       albumImage: albumImage,
       year: year,
-      artist: artist
+      artist: artist,
     };
     fetch("https://website-data.onrender.com/albums", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(newAlbum)
+      body: JSON.stringify(newAlbum),
     })
-      .then(response => response.json())
-      .then(data => {
+      .then((response) => response.json())
+      .then((data) => {
         setAlbumName("");
         setAlbumImage("");
         setYear("");
@@ -32,7 +32,7 @@ function NewMusicForm() {
 
   return (
     <div className="new-music-form">
-      <form onSubmit={(e)=>handleSubmit(e)}>
+      <form onSubmit={(e) => handleSubmit(e)}>
         <input
           type="text"
           name="albumName"
