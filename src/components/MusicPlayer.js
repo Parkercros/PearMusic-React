@@ -125,7 +125,7 @@ function MusicPlayer() {
               ⏮
             </button>
             <button className="play-pause-button" onClick={handlePlayPause}>
-              {isPlaying ? "" : "▶"}
+              {isPlaying ? "II" : "▶"}
             </button>
             <button className="next-button" onClick={handleNextTrack}>
               ⏭
